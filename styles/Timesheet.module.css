@@ -1,0 +1,383 @@
+.c{
+    overflow-y: scroll;
+    background-color: #FFFFFF;
+}
+
+@media screen and (min-width: 600px) {
+     .box{
+        width: 80%;
+        min-height: 100vh;
+        background-color:white;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navbar{
+        position: fixed;
+        width: 100%;
+        max-width: 2500px;
+        height: 72px;
+        left: 0;
+        top: 0;
+        background-color: #EBECF0;
+    }
+    .nav_content{
+        display: flex;
+        position: absolute;
+        width: 50%;
+        max-width: 50%;
+        margin: 0 20px;
+        cursor: pointer;
+        
+    }
+    .nonactive{
+        margin: 25px 45px;
+        color: gray;
+        cursor: pointer;
+    }
+    .active{
+        color: black;
+        margin: 25px 45px;
+        cursor: pointer;
+    }
+    .rightcontent{
+        position: absolute;
+        right: 0;
+        width: 50%;
+        height: 72px;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        
+    }
+    .rightcontent img{
+        height: 80%;
+        border-radius: 50px;
+        margin: 0 30px;
+        cursor: pointer;
+    }
+    .devender{
+        font-size: 15px;
+        cursor: pointer;
+    }
+    
+    .othercontent{
+        position: relative;
+        width: 100%;
+        height: 80vh;
+        margin: 70px auto;
+        background-color: teal;
+    }
+    .imagecontainer{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 50%;
+        height: 100%;
+        background-color:#EBECF0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .imagecontainer img{
+        position: absolute;
+        width: 80%;
+        max-width: 80%;
+        max-height: 80%;
+        height: auto;
+        bottom: 20px;
+    }
+    .content{
+        width: 51%;
+        height: 100%;
+        right: 0;
+        top: 0;
+        background-color: white;
+        position: absolute;
+        margin: 0px 0;
+    }
+    .clock{
+        color: aqua;
+        margin-right: 5px;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    .write{
+        color: aqua;
+        cursor: pointer;
+        }
+    .work_content{
+        display: flex;
+        width: 100%;
+        height: 20vh;
+        border-bottom: 2px solid #ccc;
+        justify-content: center;
+        align-items: center;
+    }
+    .para{
+        width: 80%;
+        font-size: 17px;
+    }
+    .time-content {
+        position: relative;
+        top: 10px;
+    }
+    .time-last {
+        position: absolute;
+        left: 50px;
+        font-size: 20px;
+    }
+    .table{
+        position: relative;
+        width: 100%;
+       min-height:40vh;
+        top: 150px;
+        background-color: white;
+        overflow-y: scroll;
+    }
+    .table_content{
+        width: 100%;
+        height: 75%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow-y: scroll;
+    
+    }
+    .last{
+        position: relative;
+        margin-top: 300px;
+        left:-200px;
+        font-size: 20px;
+    
+    }
+    
+    .table {
+        width: 80%;
+        height: auto;
+        top: 30px;
+        position: relative;
+        
+      }
+    .td{
+        text-align: left;
+        padding: 16px;    
+      }
+      .tr{
+          border-bottom: 1px solid #ccc;
+      }
+
+}
+@media screen and (max-width:600px) {
+    .box{
+        width: 80%;
+        min-height: 100vh;
+        background-color:white;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+    }
+    .navbar{
+        position:absolute;
+        width: 100%;
+        height: 72px;
+        left: 0;
+        top: 0;
+        background-color: #EBECF0;
+    }
+    .nav_content{
+        display: flex;
+        position: absolute;
+        width: 50%;
+        max-width: 50%;
+        margin: 0 20px;
+        cursor: pointer;
+        
+    }
+    .nonactive{
+        margin: 25px 45px;
+        color: gray;
+        cursor: pointer;
+    }
+    .active{
+        color: black;
+        margin: 25px 45px;
+        cursor: pointer;
+    }
+    .rightcontent{
+        position: absolute;
+        right: 0;
+        width: 50%;
+        height: 72px;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        
+    }
+    .rightcontent img{
+        height: 80%;
+        border-radius: 50px;
+        margin: 0 30px;
+        cursor: pointer;
+    }
+    .devender{
+        font-size: 15px;
+        cursor: pointer;
+    }
+    .othercontent{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        /* height: 80vh; */
+        margin: 70px auto;
+        background-color: teal;
+    }
+    .imagecontainer{
+        position:relative;
+        /* left: 0; */
+        top: 0;
+        width:100%;
+       min-height:40vh;
+        background-color:#EBECF0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .imagecontainer img{
+        position: absolute;
+        width: 80%;
+        max-width: 80%;
+        max-height: 80%;
+        height: auto;
+        bottom: 20px;
+    }
+    .content{
+        width:100%;
+       /* min-height:50vh; */
+        /* right: 0;
+        top: 0; */
+        background-color: white;
+        position:relative;
+        /* margin: 0px 0; */
+    }
+    .last{
+        position: relative;
+        /* margin-top: 300px; */
+        left:0px;
+        font-size: 20px;
+    
+    }
+    .work_content{
+        display: flex;
+        width: 100%;
+        /* height:15vh; */
+        border-bottom: 2px solid #ccc;
+        justify-content: center;
+        align-items: center;
+    }
+    .para{
+        width: 80%;
+        font-size:20px;
+    }
+    .time-content {
+        position: relative;
+        top: 10px;
+    }
+    .time-last {
+        position: absolute;
+        left: 50px;
+        font-size: 20px;
+    }
+    .table{
+        position: relative;
+        width: 100%;
+       min-height:70vh;
+        /* top: 150px; */
+        background-color: white;
+        overflow-y: scroll;
+    }
+    .table {
+        width: 80%;
+        /* height: auto; */
+        top: 20px;
+        position: relative;
+        
+      }
+
+    
+    .table_content{
+        width: 100%;
+        /* height: 75%; */
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow-y: scroll;
+    
+    }
+    .td{
+        text-align:center;
+        padding: 16px;    
+      }
+      .tr{
+        border-bottom: 1px solid #ccc;
+    }
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .active,.nonactive{
+        margin: 25px 20px;
+
+    }
+}
+@media screen and (max-width: 1300px) {
+    .last{
+        left: 10px;
+
+    }
+}
+/* @media screen and (max-width: 1000px) {
+    .table{
+        width: 40%;
+        margin-left: 50px;
+
+    }
+} */
+@media screen and (max-width: 1000px) {
+    .nav_content {
+        margin: 0 0;
+        margin-right: 10px;
+
+    }
+}
+/* @media screen and (max-width: 800px) {
+    .rightcontent img{
+        margin: 0 5px;
+        margin-left: 100px;
+        display: none;
+
+    }
+} */
+@media screen and (max-width:500px) {
+    .rightcontent{
+        display:none;
+       }
+    .clock{
+        display:none; 
+    }
+}
+
+
