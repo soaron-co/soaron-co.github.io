@@ -51,10 +51,10 @@
 }
 .logo_box{
     position: absolute;
-    padding:2%;
-    width: 12%;
-    left:4.5%;
-    top: 6%;
+    padding:1.7%;
+    width:10%;
+    left:8%;
+    top:8%;;
     clip-path: circle();
     background-color: black;
     z-index: 10;
@@ -178,6 +178,7 @@
         font-size:16px;
     }
 }
+
 
 
 
