@@ -1,22 +1,22 @@
 /* eslint-disable @next/next/link-passhref */
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
-import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Dashboard.module.css";
-import Down from "../container/Down.js";
-import Link from "next/link";
-import Lines from "../public/threelines.jpg";
-import { useState, useEffect } from "react";
+import React from 'react';
+import Head from 'next/head';
+import Image from 'next/image';
+import styles from '../styles/Dashboard.module.css';
+import Down from '../container/Down.js';
+import Link from 'next/link';
+// import Lines from '../public/threelines.jpg';
+import { useState, useEffect } from 'react';
 function Dashboard() {
   const [st, setst] = useState(false);
   const [windowSize, setWindowSize] = useState({
-    width: "",
-    height: "",
+    width: '',
+    height: '',
   });
   useEffect(() => {
     // only execute all the code below in client side
-    if (typeof window !== "undefined") {
+    if (typeof window !== 'undefined') {
       // Handler to call on window resize
       function handleResize() {
         // Set window width/height to state
@@ -27,13 +27,13 @@ function Dashboard() {
       }
 
       // Add event listener
-      window.addEventListener("resize", handleResize);
+      window.addEventListener('resize', handleResize);
 
       // Call handler right away so state gets updated with initial window size
       handleResize();
 
       // Remove event listener on cleanup
-      return () => window.removeEventListener("resize", handleResize);
+      return () => window.removeEventListener('resize', handleResize);
     }
   }, []); // Empty array ensures that effect is only run on mount
   return (
@@ -51,17 +51,15 @@ function Dashboard() {
                 st ? setst(false) : setst(true);
               }}
               className={styles.nav}
-              style={{ color: "white", background: "#3A3B3C" }}
+              style={{ color: 'white', background: '#3A3B3C' }}
             >
               <div className={styles.lines_box}>
-                <Image src={Lines} alt="" />
+                <img src="threelines.jpg" alt="" />
               </div>
-              <div className={styles.D_box}>
-                Dashboard
-              </div>
+              <div className={styles.D_box}>Dashboard</div>
             </div>
           ) : (
-            ""
+            ''
           )}
           <div className={st ? styles.b1 : styles.b}>
             <div className={styles.image}>
@@ -91,7 +89,9 @@ function Dashboard() {
               <div>Challenge</div>
             </div>
             <div className={styles.button}>
-              <button>+ Challenge</button>
+              <Link href="/Planning">
+                <button>+ Challenge</button>
+              </Link>
             </div>
           </div>
           <div className={styles.written_box_2}>
@@ -129,4 +129,3 @@ function Dashboard() {
 }
 
 export default Dashboard;
-
