@@ -25,7 +25,7 @@ function Login() {
       <form className={styles.content}>
         <div className={styles.usercontent}>
           <div className={styles.pat}>PAT </div>
-          <div> - show no empathy</div>
+          <div> - work with empathy</div>
         </div>
         <div className={styles.user_input}>
           <input type="text" placeholder="Emp ID" />
