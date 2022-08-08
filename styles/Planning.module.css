@@ -125,7 +125,7 @@
   }
 
   .submit {
-    width: 10%;
+    /* width: 10%; */
     height: 10%;
     padding: 10px 10px;
     border-radius: 5px;
@@ -232,19 +232,14 @@
   }
   .workbox2 {
     align-items: center;
-    /* width: 25%;
-      height: 60px; */
     display: flex;
     flex-direction: row;
     background-color: #f2f2f2;
     padding: 10px;
     border-radius: 5px;
-    /* column-gap: 5px; */
   }
   .workbox3 {
     align-items: center;
-    /* width: 15%;
-      height: 60px; */
     display: flex;
     flex-direction: row;
     background-color: #f2f2f2;
@@ -254,25 +249,12 @@
   }
   .workbox4 {
     align-items: center;
-    /* width: 15%;
-      height: 60px; */
     display: flex;
     flex-direction: row;
     background-color: #f2f2f2;
     padding: 10px;
     column-gap: 5px;
     border-radius: 5px;
-  }
-  .submit {
-    /* width: 10%; */
-    height: 8%;
-    padding: 10px 10px;
-    border-radius: 5px;
-    background-color: #212020;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
   .button {
     display: flex;
@@ -294,6 +276,17 @@
   .deleteicon {
     width: 40px;
     height: 40px;
+  }
+  .submit {
+    /* width: 10%; */
+    height: 8%;
+    padding: 10px 10px;
+    border-radius: 5px;
+    background-color: #212020;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media screen and (max-width: 500px) {
